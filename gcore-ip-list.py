@@ -6,7 +6,7 @@ if response.status_code == 200:
     data = response.json()
     arr = data['addresses']
        
-    with open('ip.txt', 'w') as f:
+    with open('gcoreip.txt', 'w') as f:
         for value in arr:
             f.write(value + '\n')
 else:
